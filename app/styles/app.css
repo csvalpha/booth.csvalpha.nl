@@ -1,0 +1,16 @@
+header {
+  background-color: #ffd218;
+}
+
+body {
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #000;
+}
+
+.main-content {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}

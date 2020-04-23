@@ -1,5 +1,19 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<header class="container-fluid">
+  <nav class="header-nav">
+    <div class="row">
+      <img class="col-md-2" height="50px" src="/logo.svg" alt="{{'CSV Alpha'}}">
+    </div>
+  </nav>
+</header>
 
-{{outlet}}
+
+<div class="container main-content">
+  {{outlet}}
+</div>
+
+
+<footer class="navbar fixed-bottom justify-content-center text-white">
+  <div>
+    Matthijs Vos | 2020 | <a href="https://csvalpha.nl">csvalpha.nl</a>
+  </div>
+</footer>
