@@ -190,15 +190,12 @@ export default class BoothController extends Controller {
       const formData = new FormData();
       formData.append('file', blob, 'filename.png');
 
-      fetch('https://staging.csvalpha.nl/api/v1/photo_albums/2/dropzone', {
+      fetch('https://proxy.csvalpha.nl/api/v1/photo_albums/2/dropzone', {
         body: formData,
         method: 'POST',
         contentType: false, // NEEDED, DON'T OMIT THIS (requires jQuery 1.6+)
-        processData: false, // NEEDED, DON'T OMIT THIS
-        headers: {
-        "Authorization": "Bearer 80_vaMTub_LTwMDyT9RRLOmyxRG03MnYYAADHxoYm8w"}
-        }
-      ).then(function(response) {
+        processData: false // NEEDED, DON'T OMIT THIS
+      }).then(function(response) {
         if(response.ok) {
           outerThis.set("success", "Foto is genomen! Je kan hem bekijken op de Alpha site");
           outerThis.set("error", null)
