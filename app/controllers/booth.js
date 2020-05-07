@@ -190,7 +190,7 @@ export default class BoothController extends Controller {
       const formData = new FormData();
       formData.append('file', blob, 'filename.png');
 
-      fetch('https://proxy.csvalpha.nl/api/v1/photo_albums/2/dropzone', {
+      fetch('https://proxy.csvalpha.nl/api/v1/photo_albums/315/dropzone', {
         body: formData,
         method: 'POST',
         contentType: false, // NEEDED, DON'T OMIT THIS (requires jQuery 1.6+)
